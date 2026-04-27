@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wiki do Laboratório de Informática</title>
+  <link rel="stylesheet" href="css/estilo.css" />
+</head>
+<body>
+  <header>
+    <a class="marca" href="index.html">Wiki do Laboratório de Informática</a>
+    <input class="busca" id="busca" type="search" placeholder="Pesquisar problema frequente..." oninput="filtrarProblemas()" />
+  </header>
+
+  <div class="layout">
+    <aside>
+      <h2>Navegação</h2>
+      <ul>
+        <li><a href="index.html#inicio">Página inicial</a></li>
+        <li><a href="index.html#problemas">Problemas frequentes</a></li>
+        <li><a href="index.html#antes">Antes de chamar suporte</a></li>
+        <li><a href="index.html#categorias">Categorias</a></li>
+        <li><a href="index.html#registro">Registro de problema</a></li>
+      </ul>
+
+      <h2>Categorias</h2>
+      <ul>
+        <li><a href="index.html#cat-login">Login e acesso</a></li>
+        <li><a href="index.html#cat-tv-imagem">TV e imagem</a></li>
+        <li><a href="index.html#cat-tv-som">TV e som</a></li>
+        <li><a href="index.html#cat-monitores">Monitores e imagem</a></li>
+        <li><a href="index.html#cat-internet">Internet e rede</a></li>
+        <li><a href="index.html#cat-monitoramento">Monitoramento e sala de aula</a></li>
+        <li><a href="index.html#cat-programas">Programas e sistemas</a></li>
+      </ul>
+    </aside>
+
+    <main>
+      <h1 id="inicio" class="titulo-principal">Wiki do Laboratório de Informática</h1>
+      <p class="subtitulo">Consulte primeiro os problemas frequentes e abra a página de solução correspondente.</p>
+
+      <p>Esta wiki reúne procedimentos básicos para solucionar problemas recorrentes no laboratório de informática. O objetivo é permitir que situações simples sejam resolvidas rapidamente, sem interromper a aula ou depender imediatamente do responsável técnico.</p>
+
+      <div class="caixa-info">
+        <h2>Informações da wiki</h2>
+        <table>
+          <tr><th>Finalidade</th><td>Orientar professores na solução de problemas simples.</td></tr>
+          <tr><th>Público</th><td>Professores, instrutores e equipe pedagógica.</td></tr>
+          <tr><th>Formato</th><td>Consulta rápida por categorias e procedimentos.</td></tr>
+          <tr><th>Responsável</th><td>Informar nome ou setor responsável.</td></tr>
+        </table>
+      </div>
+
+      <div class="aviso">
+        <strong>Importante:</strong> esta página não substitui o suporte técnico. Caso o problema envolva risco elétrico, dano físico, falha em vários equipamentos ou bloqueio de sistema, o responsável deve ser acionado.
+      </div>
+
+      <div class="chamada-problemas" id="problemas">
+        <h2>Problemas frequentes</h2>
+        <p>Identifique rapidamente o problema abaixo e clique para abrir a página com o passo a passo de solução.</p>
+      </div>
+
+      <div class="problemas-grade" id="listaProblemas">
+        <a class="link-problema item-wiki" href="problemas/login.html" data-texto="login acesso usuario senha usercomum usercomun outro usuário servidor credenciais computador aluno professor">
+          <span class="problema-meta">Login e acesso</span>
+          <h3><span class="problema-indice">1</span>Informações para login</h3>
+          <p>Orientações para acessar os computadores do laboratório usando o usuário comum.</p>
+        </a>
+
+        <a class="link-problema item-wiki" href="problemas/usar-tv.html" data-texto="tv televisão imagem espelhar segundo monitor segunda tela tela esquerda exibir conteúdo">
+          <span class="problema-meta">TV e imagem</span>
+          <h3><span class="problema-indice">2</span>Como usar a TV</h3>
+          <p>A TV espelha o segundo monitor, que é a tela da esquerda.</p>
+        </a>
+
+        <a class="link-problema item-wiki" href="problemas/som-tv-baixo.html" data-texto="som tv baixo volume audio hdmi adaptador três telas monitor saída mudo televisão">
+          <span class="problema-meta">TV e som</span>
+          <h3><span class="problema-indice">3</span>O som da TV está muito baixo</h3>
+          <p>O adaptador pode fazer o Windows priorizar o áudio do monitor em vez do áudio da TV.</p>
+        </a>
+
+        <a class="link-problema item-wiki" href="problemas/segundo-monitor-imagem-ruim.html" data-texto="segundo monitor imagem ruim borrada resolução baixa 1920x1080 AMD Adrenalin tela monitor TV Windows exibição">
+          <span class="problema-meta">Monitores e imagem</span>
+          <h3><span class="problema-indice">4</span>O segundo monitor está com a imagem muito ruim</h3>
+          <p>A resolução pode ser reduzida quando a TV é ligada e a opção 1920x1080 pode desaparecer.</p>
+        </a>
+
+        <a class="link-problema item-wiki" href="problemas/computadores-sem-internet.html" data-texto="computadores alunos sem internet rede conexão cabo laboratório site sistema online servidor desligado luz energia poweredge">
+          <span class="problema-meta">Internet e rede</span>
+          <h3><span class="problema-indice">5</span>Os computadores dos alunos estão sem internet</h3>
+          <p>Uma das causas possíveis é o servidor do laboratório estar desligado.</p>
+        </a>
+
+        <a class="link-problema item-wiki" href="problemas/veyon.html" data-texto="veyon master visualizar tela aluno monitorar computadores desligar internet abrir site todos computadores laboratório instrutor">
+          <span class="problema-meta">Monitoramento e sala de aula</span>
+          <h3><span class="problema-indice">6</span>Como visualizar a tela dos alunos pelo Veyon</h3>
+          <p>Use o Veyon Master para visualizar telas, abrir sites e desligar computadores.</p>
+        </a>
+
+        <a class="link-problema item-wiki" href="problemas/office-nao-funciona.html" data-texto="office word excel powerpoint pacote office licença microsoft google docs gmail institucional senai documentos planilhas apresentações nuvem">
+          <span class="problema-meta">Programas e sistemas</span>
+          <h3><span class="problema-indice">7</span>O pacote Office não funciona</h3>
+          <p>Use Google Documentos, Planilhas ou Apresentações com o Gmail institucional do SENAI.</p>
+        </a>
+      </div>
+
+      <div class="sumario">
+        <h2>Conteúdo</h2>
+        <ol>
+          <li><a href="#problemas">Problemas frequentes</a></li>
+          <li><a href="#antes">Antes de chamar suporte</a></li>
+          <li><a href="#categorias">Categorias de problemas</a></li>
+          <li><a href="#registro">Registro de problema não resolvido</a></li>
+        </ol>
+      </div>
+
+      <h2 id="antes">Antes de chamar suporte</h2>
+      <p>Antes de solicitar ajuda, recomenda-se realizar as verificações básicas abaixo.</p>
+      <table class="tabela-wiki">
+        <thead><tr><th>Verificação</th><th>O que observar</th></tr></thead>
+        <tbody>
+          <tr><td>Energia</td><td>Confirmar se computador, monitor, TV, filtro de linha ou estabilizador estão ligados.</td></tr>
+          <tr><td>Cabos</td><td>Verificar cabos de energia, rede, HDMI, vídeo, teclado, mouse e caixas de som.</td></tr>
+          <tr><td>Reinicialização</td><td>Quando possível, reiniciar o equipamento antes de registrar o problema.</td></tr>
+          <tr><td>Abrangência</td><td>Identificar se o problema ocorre em apenas um equipamento ou em vários.</td></tr>
+          <tr><td>Mensagem de erro</td><td>Anotar ou fotografar qualquer mensagem exibida na tela.</td></tr>
+        </tbody>
+      </table>
+
+      <h2 id="categorias">Categorias de problemas</h2>
+      <ul>
+        <li id="cat-login"><strong>Login e acesso:</strong> <a href="problemas/login.html">Informações para login</a>.</li>
+        <li id="cat-tv-imagem"><strong>TV e imagem:</strong> <a href="problemas/usar-tv.html">Como usar a TV</a>.</li>
+        <li id="cat-tv-som"><strong>TV e som:</strong> <a href="problemas/som-tv-baixo.html">O som da TV está muito baixo</a>.</li>
+        <li id="cat-monitores"><strong>Monitores e imagem:</strong> <a href="problemas/segundo-monitor-imagem-ruim.html">O segundo monitor está com a imagem muito ruim</a>.</li>
+        <li id="cat-internet"><strong>Internet e rede:</strong> <a href="problemas/computadores-sem-internet.html">Os computadores dos alunos estão sem internet</a>.</li>
+        <li id="cat-monitoramento"><strong>Monitoramento e sala de aula:</strong> <a href="problemas/veyon.html">Como visualizar a tela dos alunos pelo Veyon</a>.</li>
+        <li id="cat-programas"><strong>Programas e sistemas:</strong> <a href="problemas/office-nao-funciona.html">O pacote Office não funciona</a>.</li>
+      </ul>
+
+      <h2 id="registro">Registro de problema não resolvido</h2>
+      <p>Quando o problema não for resolvido pela wiki, recomenda-se registrar as seguintes informações:</p>
+      <ul>
+        <li>Nome do professor ou responsável pelo registro;</li>
+        <li>Data e horário;</li>
+        <li>Laboratório ou sala;</li>
+        <li>Número do computador ou equipamento;</li>
+        <li>Descrição objetiva do problema;</li>
+        <li>Procedimentos já tentados;</li>
+        <li>Foto ou print da mensagem de erro, quando possível.</li>
+      </ul>
+      <div class="nota"><strong>Sugestão:</strong> esta seção pode conter um link para um Google Forms de registro de ocorrências.</div>
+
+      <footer>Última atualização: inserir data. Esta wiki deve ser revisada sempre que novos problemas recorrentes forem identificados.</footer>
+    </main>
+  </div>
+
+  <script>
+    function normalizarBusca(texto) {
+      return texto.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+    }
+    function filtrarProblemas() {
+      const termo = normalizarBusca(document.getElementById('busca').value.trim());
+      document.querySelectorAll('.item-wiki').forEach(item => {
+        const texto = normalizarBusca(item.innerText + ' ' + (item.dataset.texto || ''));
+        item.classList.toggle('oculto', termo && !texto.includes(termo));
+      });
+    }
+  </script>
+</body>
+</html>

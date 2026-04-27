@@ -1,0 +1,25 @@
+Coloque nesta pasta as imagens usadas nas páginas da wiki.
+
+Nomes esperados:
+adaptador-hdmi.jpeg
+servidor.png
+servidor-frontal.png
+veyon.png
+veyon-2.png
+google-docs.png
+
+Imagens do problema do segundo monitor:
+monitor-01.png
+monitor-02.png
+monitor-03.png
+monitor-04.png
+monitor-05.png
+monitor-06.png
+monitor-07.png
+monitor-08.png
+monitor-09.png
+
+Observação:
+- O problema do driver da placa de vídeo usa 9 imagens.
+- Os passos 3 e 4 usam a mesma imagem: monitor-03.png.
+- As imagens aumentam automaticamente ao passar o mouse sobre elas.
