@@ -156,3 +156,4 @@ footer { border-top:1px solid var(--borda-clara); color:var(--cinza); font-size:
   .caixa-info th { width: auto; white-space: normal; }
 }
 @media (max-width:850px){.midia-card:hover img{transform:scale(1.15)}}
+.download-box{border:2px solid var(--senai-vermelho);background:#fff;margin:18px 0 22px;padding:16px;border-radius:4px}.download-box h2{font-family:Arial,Helvetica,sans-serif;font-size:1.15rem;font-weight:bold;color:var(--senai-azul-escuro);border-bottom:none;margin:0 0 12px;padding:0}.botao-download{display:inline-block;background:var(--senai-azul);color:#fff!important;padding:10px 16px;border-radius:4px;font-weight:bold}.botao-download:hover{background:var(--senai-azul-escuro);text-decoration:none}.video-box video{width:100%;max-height:520px;background:#000;border:1px solid var(--senai-cinza-borda)}

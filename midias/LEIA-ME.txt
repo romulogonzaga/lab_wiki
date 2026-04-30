@@ -23,3 +23,9 @@ Observação:
 - O problema do driver da placa de vídeo usa 9 imagens.
 - Os passos 3 e 4 usam a mesma imagem: monitor-03.png.
 - As imagens aumentam automaticamente ao passar o mouse sobre elas.
+
+Arquivos do tutorial SIAC:
+tutorial_siac.mp4
+
+O guia em PDF fica em:
+documentos/guia-agendamento-siac.pdf
