@@ -3,103 +3,123 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tutorial do Portal Docente | Wiki do Laboratório</title>
-  <link rel="stylesheet" href="../css/estilo.css" />
+  <title>Wiki do Laboratório de Informática</title>
+  <link rel="stylesheet" href="css/estilo.css" />
 </head>
 <body>
   <header class="topo">
-    <a class="marca" href="../index.html">Wiki do Laboratório de Informática</a>
-    <a class="botao-topo" href="../index.html#problemas">Ver problemas</a>
+    <a class="marca" href="#inicio">Wiki do Laboratório de Informática</a>
+    <a class="botao-topo" href="#problemas">Ver problemas</a>
   </header>
 
-  <div class="layout">
-    <aside class="menu-lateral">
-      <h2>Navegação</h2>
-      <ul>
-        <li><a href="../index.html#inicio">Página inicial</a></li>
-        <li><a href="../index.html#problemas">Problemas frequentes</a></li>
-        <li><a href="../index.html#antes">Antes de chamar suporte</a></li>
-        <li><a href="../index.html#categorias">Categorias</a></li>
-        <li><a href="../index.html#registro">Registro de problema</a></li>
-      </ul>
-      <h2>Tutoriais</h2>
-      <ul>
-        <li><a href="login.html">Informações para login</a></li>
-        <li><a href="usar-tv.html">Como usar a TV</a></li>
-        <li><a href="som-tv-baixo.html">O som da TV está muito baixo</a></li>
-        <li><a href="segundo-monitor-imagem-ruim.html">O segundo monitor está com a imagem muito ruim</a></li>
-        <li><a href="computadores-sem-internet.html">Os computadores dos alunos estão sem internet</a></li>
-        <li><a href="veyon.html">Veyon</a></li>
-        <li><a href="office-nao-funciona.html">O pacote Office não funciona</a></li>
-        <li><a href="robo-frequencia.html">Como utilizar o Robô de Análise de Frequência</a></li>
-        <li><a href="siac-simulados.html">Como agendar simulados no SIAC</a></li>
-        <li><a href="portal-docente.html">Tutorial do Portal Docente</a></li>
-      </ul>
-    </aside>
-
-    <main class="pagina-problema">
-      <a class="voltar-wiki" href="../index.html#problemas">← Voltar para problemas frequentes</a>
-
-      <details class="atalho-mobile">
-        <summary>Escolher outro problema ou tutorial</summary>
-        <div class="atalho-mobile-grid">
-          <a href="login.html">Informações para login</a>
-          <a href="usar-tv.html">Como usar a TV</a>
-          <a href="som-tv-baixo.html">O som da TV está muito baixo</a>
-          <a href="segundo-monitor-imagem-ruim.html">O segundo monitor está com a imagem muito ruim</a>
-          <a href="computadores-sem-internet.html">Os computadores dos alunos estão sem internet</a>
-          <a href="veyon.html">Veyon</a>
-          <a href="office-nao-funciona.html">O pacote Office não funciona</a>
-          <a href="robo-frequencia.html">Como utilizar o Robô de Análise de Frequência</a>
-          <a href="siac-simulados.html">Como agendar simulados no SIAC</a>
-          <a href="portal-docente.html">Tutorial do Portal Docente</a>
-        </div>
-      </details>
-
-      <h1 class="titulo-principal">Tutorial do Portal Docente</h1>
-      <p class="subtitulo">Página de solução — Portal Docente</p>
-      <div class="metadados-problema">
-        <strong>Categoria:</strong> Portal Docente<br>
-        <strong>Descrição:</strong> Tutoriais em vídeo para tarefas frequentes no Portal Docente: frequência, plano de aula e avaliações.
+  <main class="home" id="inicio">
+    <section class="hero">
+      <p class="etiqueta">Suporte rápido para instrutores</p>
+      <h1>Encontre rapidamente a solução para problemas comuns do laboratório.</h1>
+      <p>Use os cards abaixo para abrir o tutorial desejado. No celular, os cards aparecem em lista grande para facilitar o toque.</p>
+      <div class="hero-acoes">
+        <a class="botao-principal" href="#problemas">Abrir cards de problemas</a>
+        <a class="botao-secundario" href="problemas/portal-docente.html">Tutorial do Portal Docente</a>
       </div>
+    </section>
 
-      <div class="links-rapidos-box">
-        <h2>Tutoriais disponíveis</h2>
-        <div class="links-rapidos-grid">
-          <a class="link-rapido" href="#frequencia">Frequência<span>Como lançar ou acompanhar frequência</span></a>
-          <a class="link-rapido" href="#plano-aula">Plano de aula<span>Como acessar/preencher plano</span></a>
-          <a class="link-rapido" href="#avaliacao">Avaliação<span>Como acessar recursos de avaliação</span></a>
-        </div>
+    <section class="busca-rapida" aria-label="Atalhos rápidos">
+      <h2>Acesso rápido</h2>
+      <div class="chips-atalhos">
+          <a href="problemas/login.html">Informações para login</a>
+          <a href="problemas/usar-tv.html">Como usar a TV</a>
+          <a href="problemas/som-tv-baixo.html">O som da TV está muito baixo</a>
+          <a href="problemas/segundo-monitor-imagem-ruim.html">O segundo monitor está com a imagem muito ruim</a>
+          <a href="problemas/computadores-sem-internet.html">Os computadores dos alunos estão sem internet</a>
+          <a href="problemas/veyon.html">Veyon</a>
+          <a href="problemas/office-nao-funciona.html">O pacote Office não funciona</a>
+          <a href="problemas/robo-frequencia.html">Como utilizar o Robô de Análise de Frequência</a>
+          <a href="problemas/siac-simulados.html">Como agendar simulados no SIAC</a>
+          <a href="problemas/portal-docente.html">Tutorial do Portal Docente</a>
       </div>
+    </section>
 
-      <h2>Como usar esta página</h2>
+    <section id="problemas" class="secao">
+      <div class="secao-topo">
+        <p class="etiqueta">Problemas frequentes</p>
+        <h2>Cards de solução</h2>
+        <p>Toque ou clique no card correspondente ao problema. Os cards foram ampliados para melhorar o uso no celular.</p>
+      </div>
+      <div class="cards-problemas">
+        <a class="card-problema" href="problemas/login.html">
+          <span class="card-categoria">Login e acesso</span>
+          <strong>Informações para login</strong>
+          <span>Orientações para acessar os computadores do laboratório usando o usuário comum.</span>
+        </a>
+        <a class="card-problema" href="problemas/usar-tv.html">
+          <span class="card-categoria">TV e imagem</span>
+          <strong>Como usar a TV</strong>
+          <span>A TV espelha o segundo monitor, que é a tela da esquerda. Para exibir algo na TV, basta abrir o conteúdo na segunda tela.</span>
+        </a>
+        <a class="card-problema" href="problemas/som-tv-baixo.html">
+          <span class="card-categoria">TV e som</span>
+          <strong>O som da TV está muito baixo</strong>
+          <span>Ajuste para quando a imagem aparece na TV, mas o som sai baixo ou pelo lugar errado.</span>
+        </a>
+        <a class="card-problema" href="problemas/segundo-monitor-imagem-ruim.html">
+          <span class="card-categoria">Monitores e imagem</span>
+          <strong>O segundo monitor está com a imagem muito ruim</strong>
+          <span>Correção para quando a resolução do segundo monitor fica borrada, esticada ou reduzida.</span>
+        </a>
+        <a class="card-problema" href="problemas/computadores-sem-internet.html">
+          <span class="card-categoria">Internet e rede</span>
+          <strong>Os computadores dos alunos estão sem internet</strong>
+          <span>Verificação inicial quando vários computadores dos alunos ficam sem internet ao mesmo tempo.</span>
+        </a>
+        <a class="card-problema" href="problemas/veyon.html">
+          <span class="card-categoria">Monitoramento do laboratório</span>
+          <strong>Veyon</strong>
+          <span>Orientações básicas para uso do Veyon no acompanhamento dos computadores dos alunos.</span>
+        </a>
+        <a class="card-problema" href="problemas/office-nao-funciona.html">
+          <span class="card-categoria">Programas e sistemas</span>
+          <strong>O pacote Office não funciona</strong>
+          <span>Alternativas quando Word, Excel ou PowerPoint não abrem ou apresentam problema de licença.</span>
+        </a>
+        <a class="card-problema" href="problemas/robo-frequencia.html">
+          <span class="card-categoria">Automação de frequência</span>
+          <strong>Como utilizar o Robô de Análise de Frequência</strong>
+          <span>Uso do robô para analisar faltas consecutivas a partir dos links de frequência do Portal do Docente.</span>
+        </a>
+        <a class="card-problema" href="problemas/siac-simulados.html">
+          <span class="card-categoria">SIAC e simulados</span>
+          <strong>Como agendar simulados no SIAC</strong>
+          <span>Procedimento para localizar a turma e agendar avaliações, simulados ou diagnósticos no SIAC.</span>
+        </a>
+        <a class="card-problema" href="problemas/portal-docente.html">
+          <span class="card-categoria">Portal Docente</span>
+          <strong>Tutorial do Portal Docente</strong>
+          <span>Tutoriais em vídeo para tarefas frequentes no Portal Docente: frequência, plano de aula e avaliações.</span>
+        </a>
+      </div>
+    </section>
+
+    <section id="antes" class="secao destaque-suporte">
+      <h2>Antes de chamar suporte</h2>
       <ol>
-        <li>Escolha abaixo o tutorial correspondente à dúvida do instrutor.</li>
-        <li>Abra o vídeo em tela cheia, se estiver usando celular.</li>
-        <li>Pause o vídeo durante a execução do procedimento no Portal Docente.</li>
+        <li>Confira se o problema acontece em um computador ou em vários.</li>
+        <li>Anote a sala, o equipamento, o horário e a mensagem exibida.</li>
+        <li>Faça uma foto da tela quando houver erro visível.</li>
+        <li>Consulte o tutorial correspondente na wiki.</li>
       </ol>
+    </section>
 
-      <section class="galeria-midias" id="frequencia">
-        <h2>Tutorial: Frequência</h2>
-        <div class="video-box"><video controls preload="metadata" src="../midias/frequencia-tutorial.mp4">Seu navegador não suporta vídeo.</video></div>
-      </section>
+    <section id="categorias" class="secao">
+      <h2>Categorias</h2>
+      <div class="categorias-grid">
+        <span>Login e acesso</span><span>TV e imagem</span><span>TV e som</span><span>Monitores</span><span>Internet e rede</span><span>Programas e sistemas</span><span>Portal Docente</span><span>SIAC</span><span>Veyon</span>
+      </div>
+    </section>
 
-      <section class="galeria-midias" id="plano-aula">
-        <h2>Tutorial: Plano de aula</h2>
-        <div class="video-box"><video controls preload="metadata" src="../midias/plano-de-aula-tutorial.mp4">Seu navegador não suporta vídeo.</video></div>
-      </section>
-
-      <section class="galeria-midias" id="avaliacao">
-        <h2>Tutorial: Avaliação</h2>
-        <div class="video-box"><video controls preload="metadata" src="../midias/avaliacao-tutorial.mp4">Seu navegador não suporta vídeo.</video></div>
-      </section>
-
-      <h2>Quando chamar suporte</h2>
-      <p>Acionar suporte se o Portal Docente não abrir, se o usuário não conseguir acessar o perfil correto ou se alguma tela do tutorial não aparecer para o instrutor.</p>
-      <div class="nota"><strong>Dica:</strong> ao pedir suporte, informe qual etapa do vídeo não correspondeu ao que apareceu na tela.</div>
-
-      <footer>Última atualização: 05/06/2026.</footer>
-    </main>
-  </div>
+    <section id="registro" class="secao destaque-suporte">
+      <h2>Registro de problema</h2>
+      <p>Quando o problema não for resolvido pelo tutorial, registre as informações principais antes de acionar suporte: sala, computador, horário, descrição do erro e imagem da tela.</p>
+    </section>
+  </main>
 </body>
 </html>
