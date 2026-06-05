@@ -7,12 +7,13 @@
   <link rel="stylesheet" href="../css/estilo.css" />
 </head>
 <body>
-  <header>
+  <header class="topo">
     <a class="marca" href="../index.html">Wiki do Laboratório de Informática</a>
+    <a class="botao-topo" href="../index.html#problemas">Ver problemas</a>
   </header>
 
   <div class="layout">
-    <aside>
+    <aside class="menu-lateral">
       <h2>Navegação</h2>
       <ul>
         <li><a href="../index.html#inicio">Página inicial</a></li>
@@ -21,67 +22,67 @@
         <li><a href="../index.html#categorias">Categorias</a></li>
         <li><a href="../index.html#registro">Registro de problema</a></li>
       </ul>
-      <h2>Problemas</h2>
+      <h2>Tutoriais</h2>
       <ul>
         <li><a href="login.html">Informações para login</a></li>
         <li><a href="usar-tv.html">Como usar a TV</a></li>
-        <li><a href="som-tv-baixo.html">Som da TV baixo</a></li>
-        <li><a href="segundo-monitor-imagem-ruim.html">Segundo monitor ruim</a></li>
-        <li><a href="computadores-sem-internet.html">Computadores sem internet</a></li>
+        <li><a href="som-tv-baixo.html">O som da TV está muito baixo</a></li>
+        <li><a href="segundo-monitor-imagem-ruim.html">O segundo monitor está com a imagem muito ruim</a></li>
+        <li><a href="computadores-sem-internet.html">Os computadores dos alunos estão sem internet</a></li>
         <li><a href="veyon.html">Veyon</a></li>
-        <li><a href="office-nao-funciona.html">Office não funciona</a></li>
-        <li><a href="robo-frequencia.html">Robô de Frequência</a></li>
-        <li><a href="siac-simulados.html">Agendar simulados no SIAC</a></li>
+        <li><a href="office-nao-funciona.html">O pacote Office não funciona</a></li>
+        <li><a href="robo-frequencia.html">Como utilizar o Robô de Análise de Frequência</a></li>
+        <li><a href="siac-simulados.html">Como agendar simulados no SIAC</a></li>
+        <li><a href="portal-docente.html">Tutorial do Portal Docente</a></li>
       </ul>
     </aside>
+
     <main class="pagina-problema">
       <a class="voltar-wiki" href="../index.html#problemas">← Voltar para problemas frequentes</a>
+
+      <details class="atalho-mobile">
+        <summary>Escolher outro problema ou tutorial</summary>
+        <div class="atalho-mobile-grid">
+          <a href="login.html">Informações para login</a>
+          <a href="usar-tv.html">Como usar a TV</a>
+          <a href="som-tv-baixo.html">O som da TV está muito baixo</a>
+          <a href="segundo-monitor-imagem-ruim.html">O segundo monitor está com a imagem muito ruim</a>
+          <a href="computadores-sem-internet.html">Os computadores dos alunos estão sem internet</a>
+          <a href="veyon.html">Veyon</a>
+          <a href="office-nao-funciona.html">O pacote Office não funciona</a>
+          <a href="robo-frequencia.html">Como utilizar o Robô de Análise de Frequência</a>
+          <a href="siac-simulados.html">Como agendar simulados no SIAC</a>
+          <a href="portal-docente.html">Tutorial do Portal Docente</a>
+        </div>
+      </details>
+
       <h1 class="titulo-principal">O som da TV está muito baixo</h1>
       <p class="subtitulo">Página de solução — TV e som</p>
       <div class="metadados-problema">
         <strong>Categoria:</strong> TV e som<br>
-        <strong>Descrição:</strong> Isso acontece porque há um adaptador para permitir três telas conectadas ao computador: dois monitores e a TV. Por isso, o Windows pode priorizar o áudio do monitor em vez do áudio da TV.
+        <strong>Descrição:</strong> Ajuste para quando a imagem aparece na TV, mas o som sai baixo ou pelo lugar errado.
       </div>
-      
-      
+
       <h2>Como resolver</h2>
       <ol>
         <li>Identificar se a imagem aparece normalmente na TV, mas o som está muito baixo ou saindo pelo lugar errado.</li>
         <li>Verificar se o computador está usando o adaptador que permite conectar dois monitores e a TV ao mesmo tempo.</li>
-        <li>Entender que, por causa desse adaptador, o Windows pode priorizar o áudio do monitor em vez do áudio da TV.</li>
-        <li>Para resolver, retirar um dos cabos HDMI ligados ao adaptador.</li>
+        <li>Retirar um dos cabos HDMI ligados ao adaptador.</li>
         <li>Fazer a ligação da TV diretamente no computador, sem passar pelo adaptador.</li>
         <li>Após conectar a TV diretamente ao computador, testar novamente o áudio.</li>
-        <li>Considerar que, ao fazer isso, uma das telas poderá deixar de ser usada, mas o som da TV deverá funcionar corretamente.</li>
       </ol>
-      
-        <h2>Observações</h2>
-        <ul>
-          <li>Esse ajuste troca a prioridade de áudio do Windows, fazendo a TV ser reconhecida corretamente como saída de som.</li>
-          <li>A solução pode fazer com que uma das telas deixe de funcionar temporariamente, pois o computador deixará de usar uma das conexões HDMI do adaptador.</li>
-          <li>Use essa solução quando a prioridade for apresentar com som na TV.</li>
-        </ul>
-
-      
-        <section class="galeria-midias">
-          <h2>Ilustração do processo</h2>
-          <p>Use as imagens abaixo como referência visual. Elas estão organizadas na ordem do procedimento.</p>
-          <div class="midias-grid">
-            <figure class="midia-card">
-              <img src="../midias/adaptador-hdmi.jpeg" alt="Adaptador usado nas conexões de vídeo" />
-              <figcaption class="midia-texto">
-                <span class="midia-ordem">Passo visual 1</span>
-                <span class="midia-titulo">Adaptador usado nas conexões de vídeo</span>
-                <p class="midia-legenda">O adaptador permite conectar mais telas ao computador, mas pode fazer o Windows priorizar o áudio do monitor em vez da TV.</p>
-              </figcaption>
-            </figure>
-          </div>
-        </section>
-
+      <h2>Observações</h2>
+      <ul>
+        <li>Esse ajuste troca a prioridade de áudio do Windows, fazendo a TV ser reconhecida corretamente como saída de som.</li>
+        <li>A solução pode fazer com que uma das telas deixe de funcionar temporariamente.</li>
+        <li>Use essa solução quando a prioridade for apresentar com som na TV.</li>
+      </ul>
+      <section class="galeria-midias"><h2>Ilustração do processo</h2><div class="midias-grid"><figure class="midia-card"><img src="../midias/adaptador-hdmi.jpeg" alt="Adaptador usado nas conexões de vídeo" /><figcaption class="midia-texto"><span class="midia-ordem">Passo visual 1</span><span class="midia-titulo">Adaptador usado nas conexões de vídeo</span><p>O adaptador permite conectar mais telas ao computador, mas pode fazer o Windows priorizar o áudio do monitor em vez da TV.</p></figcaption></figure></div></section>
       <h2>Quando chamar suporte</h2>
       <p>Acionar suporte se, mesmo ligando a TV diretamente ao computador, o som continuar sem funcionar ou continuar muito baixo.</p>
       <div class="nota"><strong>Dica:</strong> se o problema continuar, anote o equipamento, a sala, o horário e tire uma foto da mensagem exibida na tela.</div>
-      <footer>Última atualização: inserir data.</footer>
+
+      <footer>Última atualização: 05/06/2026.</footer>
     </main>
   </div>
 </body>

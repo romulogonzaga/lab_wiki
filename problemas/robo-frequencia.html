@@ -7,12 +7,13 @@
   <link rel="stylesheet" href="../css/estilo.css" />
 </head>
 <body>
-  <header>
+  <header class="topo">
     <a class="marca" href="../index.html">Wiki do Laboratório de Informática</a>
+    <a class="botao-topo" href="../index.html#problemas">Ver problemas</a>
   </header>
 
   <div class="layout">
-    <aside>
+    <aside class="menu-lateral">
       <h2>Navegação</h2>
       <ul>
         <li><a href="../index.html#inicio">Página inicial</a></li>
@@ -21,84 +22,76 @@
         <li><a href="../index.html#categorias">Categorias</a></li>
         <li><a href="../index.html#registro">Registro de problema</a></li>
       </ul>
-      <h2>Problemas</h2>
+      <h2>Tutoriais</h2>
       <ul>
         <li><a href="login.html">Informações para login</a></li>
         <li><a href="usar-tv.html">Como usar a TV</a></li>
-        <li><a href="som-tv-baixo.html">Som da TV baixo</a></li>
-        <li><a href="segundo-monitor-imagem-ruim.html">Segundo monitor ruim</a></li>
-        <li><a href="computadores-sem-internet.html">Computadores sem internet</a></li>
+        <li><a href="som-tv-baixo.html">O som da TV está muito baixo</a></li>
+        <li><a href="segundo-monitor-imagem-ruim.html">O segundo monitor está com a imagem muito ruim</a></li>
+        <li><a href="computadores-sem-internet.html">Os computadores dos alunos estão sem internet</a></li>
         <li><a href="veyon.html">Veyon</a></li>
-        <li><a href="office-nao-funciona.html">Office não funciona</a></li>
-        <li><a href="robo-frequencia.html">Robô de Frequência</a></li>
-        <li><a href="siac-simulados.html">Agendar simulados no SIAC</a></li>
+        <li><a href="office-nao-funciona.html">O pacote Office não funciona</a></li>
+        <li><a href="robo-frequencia.html">Como utilizar o Robô de Análise de Frequência</a></li>
+        <li><a href="siac-simulados.html">Como agendar simulados no SIAC</a></li>
+        <li><a href="portal-docente.html">Tutorial do Portal Docente</a></li>
       </ul>
     </aside>
+
     <main class="pagina-problema">
       <a class="voltar-wiki" href="../index.html#problemas">← Voltar para problemas frequentes</a>
+
+      <details class="atalho-mobile">
+        <summary>Escolher outro problema ou tutorial</summary>
+        <div class="atalho-mobile-grid">
+          <a href="login.html">Informações para login</a>
+          <a href="usar-tv.html">Como usar a TV</a>
+          <a href="som-tv-baixo.html">O som da TV está muito baixo</a>
+          <a href="segundo-monitor-imagem-ruim.html">O segundo monitor está com a imagem muito ruim</a>
+          <a href="computadores-sem-internet.html">Os computadores dos alunos estão sem internet</a>
+          <a href="veyon.html">Veyon</a>
+          <a href="office-nao-funciona.html">O pacote Office não funciona</a>
+          <a href="robo-frequencia.html">Como utilizar o Robô de Análise de Frequência</a>
+          <a href="siac-simulados.html">Como agendar simulados no SIAC</a>
+          <a href="portal-docente.html">Tutorial do Portal Docente</a>
+        </div>
+      </details>
+
       <h1 class="titulo-principal">Como utilizar o Robô de Análise de Frequência</h1>
       <p class="subtitulo">Página de solução — Automação de frequência</p>
       <div class="metadados-problema">
         <strong>Categoria:</strong> Automação de frequência<br>
-        <strong>Descrição:</strong> O robô acessa o sistema, puxa a lista de chamada da unidade/turma informada e confere, dentro dos parâmetros configurados, os alunos em situação de faltas consecutivas.
+        <strong>Descrição:</strong> Uso do robô para analisar faltas consecutivas a partir dos links de frequência do Portal do Docente.
       </div>
 
       <div class="download-box">
         <h2>Baixar aplicativo do robô</h2>
-        <p>Inclua no código o link direto para download do aplicativo do Robô de Análise de Frequência.</p>
+        <p>Use o botão abaixo para baixar o aplicativo do Robô de Análise de Frequência.</p>
         <a class="botao-download" href="https://drive.google.com/file/d/1UvqjT_MQyv_zqfEqUpehCkCr4ULr_ld1/view?usp=sharing" target="_blank" rel="noopener noreferrer">Baixar aplicativo</a>
       </div>
-
-      <div class="aviso">
-        <strong>Atenção:</strong> use apenas links de frequência do <a href="https://portaldocente.fiemg.com.br/FrameHTML/Web/App/Edu/PortalDoProfessor/#/portal/home" target="_blank" rel="noopener noreferrer">Portal do Docente</a> e confira se usuário, senha, dias da semana, feriados e pasta de saída estão corretos antes de iniciar a análise.
-      </div>
-
+      <div class="aviso"><strong>Atenção:</strong> use apenas links de frequência do <a href="https://portaldocente.fiemg.com.br/FrameHTML/Web/App/Edu/PortalDoProfessor/#/portal/home" target="_blank" rel="noopener noreferrer">Portal do Docente</a> e confira usuário, senha, dias da semana, feriados e pasta de saída antes de iniciar a análise.</div>
       <h2>Como resolver</h2>
       <ol>
         <li>Abra o <strong>Robô de Análise de Frequência</strong>.</li>
-        <li>Informe o <strong>usuário</strong> e a <strong>senha</strong> do <a href="https://portaldocente.fiemg.com.br/FrameHTML/Web/App/Edu/PortalDoProfessor/#/portal/home" target="_blank" rel="noopener noreferrer">Portal do Docente</a>.</li>
-        <li>Acesse o <a href="https://portaldocente.fiemg.com.br/FrameHTML/Web/App/Edu/PortalDoProfessor/#/portal/home" target="_blank" rel="noopener noreferrer">Portal do Docente</a> pelo navegador e faça login.</li>
-        <li>Entre na tela de frequência da turma desejada e copie o link da página de frequência.</li>
+        <li>Informe o <strong>usuário</strong> e a <strong>senha</strong> do Portal do Docente.</li>
+        <li>Acesse a tela de frequência da turma desejada e copie o link da página de frequência.</li>
         <li>Cole no robô os links de frequência, colocando <strong>um link por linha</strong>.</li>
         <li>Marque os dias da semana que devem ser considerados na análise.</li>
         <li>Informe feriados ou dias que devem ser ignorados, usando o formato <strong>DD/MM/AAAA</strong>, um por linha.</li>
         <li>Escolha a pasta em que o arquivo <strong>email_alerta_faltas.txt</strong> será salvo.</li>
-        <li>Defina se deseja salvar usuário e senha e se o robô deve rodar em segundo plano.</li>
         <li>Clique em <strong>Iniciar Análise</strong> e aguarde o processamento.</li>
-        <li>Ao final, localize o arquivo <strong>email_alerta_faltas.txt</strong>, que contém o texto pronto para envio ou acompanhamento.</li>
       </ol>
-
       <h2>Observações</h2>
       <ul>
         <li>O campo de links aceita mais de uma turma, desde que cada link esteja em uma linha separada.</li>
-        <li>Os feriados e dias ignorados evitam que datas sem aula sejam consideradas no acompanhamento.</li>
-        <li>O arquivo gerado serve como base para acompanhamento dos alunos com faltas consecutivas.</li>
-        <li>Pelo código fonte do aplicativo, o robô gera o arquivo <strong>email_alerta_faltas.txt</strong>.</li>
         <li>A análise sinaliza alunos com <strong>2 ou mais dias de faltas totais consecutivas</strong>.</li>
         <li>Quando a opção de rodar em segundo plano estiver ativada, o navegador fica invisível durante a execução.</li>
       </ul>
-
-      <section class="galeria-midias">
-        <h2>Ilustração do processo</h2>
-        <p>Use as imagens abaixo como referência visual. Elas estão organizadas na ordem do procedimento. Passe o mouse sobre uma imagem para ampliá-la.</p>
-        <div class="midias-grid">
-          <figure class="midia-card"><img src="../midias/robo-frequencia-01.png" alt="Preencher usuário e senha"><figcaption class="midia-texto"><span class="midia-ordem">Passo visual 1</span><span class="midia-titulo">Preencher usuário e senha</span><p class="midia-legenda">Digite as credenciais usadas no <a href="https://portaldocente.fiemg.com.br/FrameHTML/Web/App/Edu/PortalDoProfessor/#/portal/home" target="_blank" rel="noopener noreferrer">Portal do Docente</a>.</p></figcaption></figure>
-          <figure class="midia-card"><img src="../midias/robo-frequencia-02.png" alt="Login no <a href="https://portaldocente.fiemg.com.br/FrameHTML/Web/App/Edu/PortalDoProfessor/#/portal/home" target="_blank" rel="noopener noreferrer">Portal do Docente</a>"><figcaption class="midia-texto"><span class="midia-ordem">Passo visual 2</span><span class="midia-titulo">Login no <a href="https://portaldocente.fiemg.com.br/FrameHTML/Web/App/Edu/PortalDoProfessor/#/portal/home" target="_blank" rel="noopener noreferrer">Portal do Docente</a></span><p class="midia-legenda">Acesse o <a href="https://portaldocente.fiemg.com.br/FrameHTML/Web/App/Edu/PortalDoProfessor/#/portal/home" target="_blank" rel="noopener noreferrer">Portal do Docente</a> e faça login.</p></figcaption></figure>
-          <figure class="midia-card"><img src="../midias/robo-frequencia-03.png" alt="Copiar link da frequência"><figcaption class="midia-texto"><span class="midia-ordem">Passo visual 3</span><span class="midia-titulo">Copiar link da frequência</span><p class="midia-legenda">Na tela de frequência da turma, copie o endereço da página no navegador.</p></figcaption></figure>
-          <figure class="midia-card"><img src="../midias/robo-frequencia-04.png" alt="Colar links de frequência"><figcaption class="midia-texto"><span class="midia-ordem">Passo visual 4</span><span class="midia-titulo">Colar links de frequência</span><p class="midia-legenda">Cole no robô os links de frequência, um por linha.</p></figcaption></figure>
-          <figure class="midia-card"><img src="../midias/robo-frequencia-05.png" alt="Selecionar dias da semana"><figcaption class="midia-texto"><span class="midia-ordem">Passo visual 5</span><span class="midia-titulo">Selecionar dias da semana</span><p class="midia-legenda">Marque os dias da semana que devem entrar na análise.</p></figcaption></figure>
-          <figure class="midia-card"><img src="../midias/robo-frequencia-06.png" alt="Informar feriados ou dias ignorados"><figcaption class="midia-texto"><span class="midia-ordem">Passo visual 6</span><span class="midia-titulo">Informar feriados ou dias ignorados</span><p class="midia-legenda">Digite datas no formato DD/MM/AAAA, uma por linha, para ignorá-las.</p></figcaption></figure>
-          <figure class="midia-card"><img src="../midias/robo-frequencia-07.png" alt="Escolher pasta de saída"><figcaption class="midia-texto"><span class="midia-ordem">Passo visual 7</span><span class="midia-titulo">Escolher pasta de saída</span><p class="midia-legenda">Clique em Procurar e selecione onde o arquivo TXT será salvo.</p></figcaption></figure>
-          <figure class="midia-card"><img src="../midias/robo-frequencia-08.png" alt="Configurar opções de execução"><figcaption class="midia-texto"><span class="midia-ordem">Passo visual 8</span><span class="midia-titulo">Configurar opções de execução</span><p class="midia-legenda">Defina se deseja salvar usuário e senha e rodar em segundo plano.</p></figcaption></figure>
-          <figure class="midia-card"><img src="../midias/robo-frequencia-09.png" alt="Iniciar análise"><figcaption class="midia-texto"><span class="midia-ordem">Passo visual 9</span><span class="midia-titulo">Iniciar análise</span><p class="midia-legenda">Clique em Iniciar Análise para começar o processamento.</p></figcaption></figure>
-          <figure class="midia-card"><img src="../midias/robo-frequencia-10.png" alt="Arquivo gerado"><figcaption class="midia-texto"><span class="midia-ordem">Passo visual 10</span><span class="midia-titulo">Arquivo gerado</span><p class="midia-legenda">Ao final, localize o arquivo email_alerta_faltas.txt na área de trabalho ou pasta escolhida.</p></figcaption></figure>
-        </div>
-      </section>
-
+      <section class="galeria-midias"><h2>Ilustração do processo</h2><p>Passe o mouse sobre uma imagem para ampliá-la.</p><div class="midias-grid"><figure class="midia-card"><img src="../midias/robo-frequencia-01.png" alt="Passo 1 do Robô de Análise de Frequência" /><figcaption class="midia-texto"><span class="midia-ordem">Passo visual 1</span><span class="midia-titulo">Robô de frequência</span><p>Imagem de referência do procedimento.</p></figcaption></figure><figure class="midia-card"><img src="../midias/robo-frequencia-02.png" alt="Passo 2 do Robô de Análise de Frequência" /><figcaption class="midia-texto"><span class="midia-ordem">Passo visual 2</span><span class="midia-titulo">Robô de frequência</span><p>Imagem de referência do procedimento.</p></figcaption></figure><figure class="midia-card"><img src="../midias/robo-frequencia-03.png" alt="Passo 3 do Robô de Análise de Frequência" /><figcaption class="midia-texto"><span class="midia-ordem">Passo visual 3</span><span class="midia-titulo">Robô de frequência</span><p>Imagem de referência do procedimento.</p></figcaption></figure><figure class="midia-card"><img src="../midias/robo-frequencia-04.png" alt="Passo 4 do Robô de Análise de Frequência" /><figcaption class="midia-texto"><span class="midia-ordem">Passo visual 4</span><span class="midia-titulo">Robô de frequência</span><p>Imagem de referência do procedimento.</p></figcaption></figure><figure class="midia-card"><img src="../midias/robo-frequencia-05.png" alt="Passo 5 do Robô de Análise de Frequência" /><figcaption class="midia-texto"><span class="midia-ordem">Passo visual 5</span><span class="midia-titulo">Robô de frequência</span><p>Imagem de referência do procedimento.</p></figcaption></figure><figure class="midia-card"><img src="../midias/robo-frequencia-06.png" alt="Passo 6 do Robô de Análise de Frequência" /><figcaption class="midia-texto"><span class="midia-ordem">Passo visual 6</span><span class="midia-titulo">Robô de frequência</span><p>Imagem de referência do procedimento.</p></figcaption></figure><figure class="midia-card"><img src="../midias/robo-frequencia-07.png" alt="Passo 7 do Robô de Análise de Frequência" /><figcaption class="midia-texto"><span class="midia-ordem">Passo visual 7</span><span class="midia-titulo">Robô de frequência</span><p>Imagem de referência do procedimento.</p></figcaption></figure><figure class="midia-card"><img src="../midias/robo-frequencia-08.png" alt="Passo 8 do Robô de Análise de Frequência" /><figcaption class="midia-texto"><span class="midia-ordem">Passo visual 8</span><span class="midia-titulo">Robô de frequência</span><p>Imagem de referência do procedimento.</p></figcaption></figure><figure class="midia-card"><img src="../midias/robo-frequencia-09.png" alt="Passo 9 do Robô de Análise de Frequência" /><figcaption class="midia-texto"><span class="midia-ordem">Passo visual 9</span><span class="midia-titulo">Robô de frequência</span><p>Imagem de referência do procedimento.</p></figcaption></figure><figure class="midia-card"><img src="../midias/robo-frequencia-10.png" alt="Passo 10 do Robô de Análise de Frequência" /><figcaption class="midia-texto"><span class="midia-ordem">Passo visual 10</span><span class="midia-titulo">Robô de frequência</span><p>Imagem de referência do procedimento.</p></figcaption></figure></div></section>
       <h2>Quando chamar suporte</h2>
-      <p>Acionar suporte se o robô não abrir, não conseguir acessar o <a href="https://portaldocente.fiemg.com.br/FrameHTML/Web/App/Edu/PortalDoProfessor/#/portal/home" target="_blank" rel="noopener noreferrer">Portal do Docente</a>, não localizar a tabela de frequência ou não gerar o arquivo TXT ao final da análise.</p>
+      <p>Acionar suporte se o robô não abrir, não conseguir acessar o Portal do Docente, não localizar a tabela de frequência ou não gerar o arquivo TXT ao final da análise.</p>
       <div class="nota"><strong>Dica:</strong> se ocorrer erro, anote a mensagem exibida e verifique se foi gerado algum print ou arquivo de erro na pasta de saída.</div>
-      <footer>Última atualização: inserir data.</footer>
+
+      <footer>Última atualização: 05/06/2026.</footer>
     </main>
   </div>
 </body>

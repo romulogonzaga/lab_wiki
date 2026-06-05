@@ -7,12 +7,13 @@
   <link rel="stylesheet" href="../css/estilo.css" />
 </head>
 <body>
-  <header>
+  <header class="topo">
     <a class="marca" href="../index.html">Wiki do Laboratório de Informática</a>
+    <a class="botao-topo" href="../index.html#problemas">Ver problemas</a>
   </header>
 
   <div class="layout">
-    <aside>
+    <aside class="menu-lateral">
       <h2>Navegação</h2>
       <ul>
         <li><a href="../index.html#inicio">Página inicial</a></li>
@@ -21,29 +22,47 @@
         <li><a href="../index.html#categorias">Categorias</a></li>
         <li><a href="../index.html#registro">Registro de problema</a></li>
       </ul>
-      <h2>Problemas</h2>
+      <h2>Tutoriais</h2>
       <ul>
         <li><a href="login.html">Informações para login</a></li>
         <li><a href="usar-tv.html">Como usar a TV</a></li>
-        <li><a href="som-tv-baixo.html">Som da TV baixo</a></li>
-        <li><a href="segundo-monitor-imagem-ruim.html">Segundo monitor ruim</a></li>
-        <li><a href="computadores-sem-internet.html">Computadores sem internet</a></li>
+        <li><a href="som-tv-baixo.html">O som da TV está muito baixo</a></li>
+        <li><a href="segundo-monitor-imagem-ruim.html">O segundo monitor está com a imagem muito ruim</a></li>
+        <li><a href="computadores-sem-internet.html">Os computadores dos alunos estão sem internet</a></li>
         <li><a href="veyon.html">Veyon</a></li>
-        <li><a href="office-nao-funciona.html">Office não funciona</a></li>
-        <li><a href="robo-frequencia.html">Robô de Frequência</a></li>
-        <li><a href="siac-simulados.html">Agendar simulados no SIAC</a></li>
+        <li><a href="office-nao-funciona.html">O pacote Office não funciona</a></li>
+        <li><a href="robo-frequencia.html">Como utilizar o Robô de Análise de Frequência</a></li>
+        <li><a href="siac-simulados.html">Como agendar simulados no SIAC</a></li>
+        <li><a href="portal-docente.html">Tutorial do Portal Docente</a></li>
       </ul>
     </aside>
+
     <main class="pagina-problema">
       <a class="voltar-wiki" href="../index.html#problemas">← Voltar para problemas frequentes</a>
+
+      <details class="atalho-mobile">
+        <summary>Escolher outro problema ou tutorial</summary>
+        <div class="atalho-mobile-grid">
+          <a href="login.html">Informações para login</a>
+          <a href="usar-tv.html">Como usar a TV</a>
+          <a href="som-tv-baixo.html">O som da TV está muito baixo</a>
+          <a href="segundo-monitor-imagem-ruim.html">O segundo monitor está com a imagem muito ruim</a>
+          <a href="computadores-sem-internet.html">Os computadores dos alunos estão sem internet</a>
+          <a href="veyon.html">Veyon</a>
+          <a href="office-nao-funciona.html">O pacote Office não funciona</a>
+          <a href="robo-frequencia.html">Como utilizar o Robô de Análise de Frequência</a>
+          <a href="siac-simulados.html">Como agendar simulados no SIAC</a>
+          <a href="portal-docente.html">Tutorial do Portal Docente</a>
+        </div>
+      </details>
+
       <h1 class="titulo-principal">Como usar a TV</h1>
       <p class="subtitulo">Página de solução — TV e imagem</p>
       <div class="metadados-problema">
         <strong>Categoria:</strong> TV e imagem<br>
         <strong>Descrição:</strong> A TV espelha o segundo monitor, que é a tela da esquerda. Para exibir algo na TV, basta abrir o conteúdo na segunda tela.
       </div>
-      
-      
+
       <h2>Como resolver</h2>
       <ol>
         <li>Ligar a TV e aguardar alguns segundos.</li>
@@ -52,19 +71,16 @@
         <li>Conferir se o conteúdo apareceu também na TV.</li>
         <li>Se o conteúdo estiver aparecendo apenas no monitor principal, mover a janela para a tela da esquerda.</li>
       </ol>
-      
-        <h2>Observações</h2>
-        <ul>
-          <li>Não é necessário alterar configurações avançadas para usar a TV no dia a dia.</li>
-          <li>A regra principal é: tudo que aparecer no segundo monitor, a tela da esquerda, será exibido também na TV.</li>
-          <li>Para apresentar slides, vídeos ou páginas da internet, abra o conteúdo e mova a janela para a segunda tela.</li>
-        </ul>
-
-      
+      <h2>Observações</h2>
+      <ul>
+        <li>Não é necessário alterar configurações avançadas para usar a TV no dia a dia.</li>
+        <li>A regra principal é: tudo que aparecer no segundo monitor, a tela da esquerda, será exibido também na TV.</li>
+      </ul>
       <h2>Quando chamar suporte</h2>
       <p>Acionar suporte se a TV estiver ligada, mas não estiver espelhando a segunda tela ou se nenhuma imagem aparecer.</p>
       <div class="nota"><strong>Dica:</strong> se o problema continuar, anote o equipamento, a sala, o horário e tire uma foto da mensagem exibida na tela.</div>
-      <footer>Última atualização: inserir data.</footer>
+
+      <footer>Última atualização: 05/06/2026.</footer>
     </main>
   </div>
 </body>
